@@ -9,6 +9,7 @@ import Covertura from "./components/covertura";
 import Nosotros from "./components/nosotros";
 import Contact from "./components/contacto";
 import Footer from "./components/footer";
+import WhatsApp from "./components/WhatsApp";
 
 export default function Home() {
   const onContactClick = () => {
@@ -18,6 +19,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-background">
+      <WhatsApp />
       <Header onContactClick={onContactClick} />
       <Carrusel onContactClick={onContactClick} />
       <Services onContactClick={onContactClick} />
