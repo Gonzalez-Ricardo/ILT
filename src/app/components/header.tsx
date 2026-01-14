@@ -8,11 +8,10 @@ export default function Header({ onContactClick }: { onContactClick: () => void 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navItems = [
-    { label: "Inicio", href: "#" },
+    { label: "Inicio", href: "#hero" },
     { label: "Servicios", href: "#servicios" },
     { label: "Sectores de Gobierno", href: "#gobierno" },
     { label: "Nosotros", href: "#nosotros" },
-    { label: "Contacto", href: "#contacto" },
   ]
 
   return (

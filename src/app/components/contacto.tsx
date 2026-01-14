@@ -33,7 +33,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contacto" className="py-16 sm:py-15 lg:py-15 bg-linear-to-b from-gray-50 to-white">
+    <section id="contacto" className="py-20 sm:py-20 lg:py-20 bg-linear-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">

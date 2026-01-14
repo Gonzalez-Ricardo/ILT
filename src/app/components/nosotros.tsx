@@ -26,13 +26,10 @@ const values = [
 
 export default function About({ onContactClick }: ContactClickProps) {
   return (
-    <section id="nosotros" className="py-16 sm:py-20 lg:py-20 bg-linear-to-b from-white to-gray-50">
+    <section id="nosotros" className="py-16 sm:py-25 lg:py-25 bg-linear-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-[#e8f5ff] text-[#42b481] rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
-            Sobre Nosotros
-          </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-4 sm:mb-6 leading-tight px-4">
             Innovación en Logística
             <span className="block mt-2 font-normal text-[#42b481]">para el Sector Público</span>

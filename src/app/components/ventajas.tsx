@@ -39,9 +39,6 @@ export default function WhyChooseUs({ onContactClick }: ContactClickProps) {
     <section className="py-16 sm:py-20 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#e3e8ef] text-[#42b481] rounded-full font-bold text-sm mb-6">
-            VENTAJAS COMPETITIVAS
-          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-black mb-6 leading-tight text-balance">
             Por Qué Somos su
             <br />

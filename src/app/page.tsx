@@ -24,9 +24,9 @@ export default function Home() {
       <Carrusel onContactClick={onContactClick} />
       <Services onContactClick={onContactClick} />
       <GovernmentSectors onContactClick={onContactClick} />
-      <Ventajas onContactClick={onContactClick} />
       <Covertura onContactClick={onContactClick} />
       <Nosotros onContactClick={onContactClick} />
+      <Ventajas onContactClick={onContactClick} />
       <Contact />
       <Footer onContactClick={onContactClick} />
     </main>

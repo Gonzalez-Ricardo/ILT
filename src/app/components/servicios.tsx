@@ -1,6 +1,7 @@
 import { Lightbulb, Truck, Package, Hammer, FileText } from "lucide-react";
 import Image from "next/image";
 import type { ContactClickProps } from "./types";
+import { useState } from "react"
 
 const services = [
   {
@@ -71,10 +72,11 @@ const services = [
 ];
 
 export default function Services({ onContactClick }: ContactClickProps) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <section
       id="servicios"
-      className="py-16 sm:py-20 lg:py-20 xl:py-20 bg-white"
+      className="py-16 sm:py-25 lg:py-25 xl:py-25 bg-white"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-black">
         {/* Section header */}
@@ -180,7 +182,10 @@ export default function Services({ onContactClick }: ContactClickProps) {
                   eficiencia operativa y precios altamente competitivos.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <button className="group px-6 sm:px-8 py-3 sm:py-4 bg-white hover:bg-gray-50 text-primary rounded-lg font-medium text-sm sm:text-base transition-all shadow-md hover:shadow-xl flex items-center justify-center gap-2">
+                  <button onClick={() => {
+                onContactClick()
+                setMobileMenuOpen(false)
+              }} className="group px-6 sm:px-8 py-3 sm:py-4 bg-white hover:bg-gray-50 text-primary rounded-lg font-medium text-sm sm:text-base transition-all shadow-md hover:shadow-xl flex items-center justify-center gap-2">
                     Solicitar Cotización
                     <svg
                       className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform"
