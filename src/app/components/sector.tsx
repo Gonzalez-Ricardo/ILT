@@ -3,7 +3,7 @@ import type { ContactClickProps } from "./types";
 
 export default function GovernmentSectors({ onContactClick }: ContactClickProps) {
   return (
-    <section id="gobierno" className="py-16 sm:py-25 md:py-25 bg-linear-to-br from-gray-50 to-blue-50">
+    <section id="gobierno" className="py-25 sm:py-25 md:py-25 bg-linear-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-black mb-6 leading-tight text-balance">

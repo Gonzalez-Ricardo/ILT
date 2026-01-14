@@ -55,7 +55,7 @@ export default function Hero({ onContactClick }: ContactClickProps) {
       <div className="absolute inset-y-0 left-2 sm:left-4 flex items-center z-20">
         <button
           onClick={prevSlide}
-          className="flex p-2 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all border border-white/20"
+          className="hidden  p-2 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all border border-white/20"
           aria-label="Previous slide"
         >
           <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
@@ -64,7 +64,7 @@ export default function Hero({ onContactClick }: ContactClickProps) {
       <div className="absolute inset-y-0 right-2 sm:right-4 flex items-center z-20">
         <button
           onClick={nextSlide}
-          className="flex p-2 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all border border-white/20"
+          className="hidden p-2 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all border border-white/20"
           aria-label="Next slide"
         >
           <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white" />

@@ -26,7 +26,7 @@ const values = [
 
 export default function About({ onContactClick }: ContactClickProps) {
   return (
-    <section id="nosotros" className="py-16 sm:py-25 lg:py-25 bg-linear-to-b from-white to-gray-50">
+    <section id="nosotros" className="py-25 sm:py-25 lg:py-25 bg-linear-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
