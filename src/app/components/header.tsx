@@ -81,7 +81,7 @@ export default function Header({ onContactClick }: { onContactClick: () => void 
                 onContactClick()
                 setMobileMenuOpen(false)
               }}
-              className="w-full px-4 py-3 bg-primary text-primary-foreground rounded-lg font-medium text-sm mt-4"
+              className="w-full px-4 py-3 bg-[#42b481] text-white rounded-lg font-medium text-sm mt-4"
             >
               Solicitar cotización
             </button>
