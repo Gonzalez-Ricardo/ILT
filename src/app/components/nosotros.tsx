@@ -5,22 +5,22 @@ const values = [
   {
     icon: Shield,
     title: "Confiabilidad",
-    description: "Cumplimos compromisos con integridad y transparencia en cada proyecto municipal",
+    description: "Actuamos con integridad, transparencia y responsabilidad en cada proyecto de infraestructura que ejecutamos.",
   },
   {
     icon: CheckCircle2,
     title: "Cumplimiento",
-    description: "Respeto total a normas y regulaciones legales en todas nuestras operaciones",
+    description: "Operamos bajo estricto apego a la normatividad legal, técnica y administrativa aplicable en todos los niveles de gobierno.",
   },
   {
     icon: Sparkles,
     title: "Innovación",
-    description: "Tecnología LED de vanguardia para optimizar resultados y eficiencia energética",
+    description: "Implementamos tecnologías de vanguardia en iluminación y logística para maximizar eficiencia, seguridad y sustentabilidad.",
   },
   {
     icon: Heart,
     title: "Compromiso",
-    description: "Dedicación absoluta al éxito de cada proyecto de infraestructura municipal",
+    description: "Trabajamos con dedicación total para garantizar el éxito, la calidad y la entrega oportuna de cada proyecto.",
   },
 ]
 
@@ -38,8 +38,7 @@ export default function About({ onContactClick }: ContactClickProps) {
             <span className="block mt-2 font-normal text-[#42b481]">para el Sector Público</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
-            Somos una empresa especializada en soluciones integrales de iluminación municipal, comprometidos con la
-            modernización de infraestructura pública en México.
+            Somos una empresa mexicana especializada en soluciones integrales de importación, logística e iluminación municipal, comprometidos con la modernización de la infraestructura pública y el desarrollo sostenible en México.
           </p>
         </div>
 
@@ -56,9 +55,7 @@ export default function About({ onContactClick }: ContactClickProps) {
                 </div>
                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-4 sm:mb-6">Nuestra Misión</h3>
                 <p className="text-white/95 leading-relaxed text-sm sm:text-base lg:text-lg">
-                  Brindar soluciones integrales y confiables en importación, logística y alumbrado público para el
-                  sector municipal. Nos posicionamos como aliados estratégicos de gobiernos en proyectos de
-                  infraestructura que mejoran la calidad de vida de las comunidades mexicanas.
+                  Brindar soluciones integrales, eficientes y confiables en importación, logística e infraestructura de alumbrado público, actuando como aliados estratégicos de los gobiernos municipales y estatales, contribuyendo a mejorar la seguridad, la eficiencia energética y la calidad de vida de la población.
                 </p>
               </div>
             </div>
@@ -71,9 +68,7 @@ export default function About({ onContactClick }: ContactClickProps) {
             </div>
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-light text-foreground mb-4 sm:mb-6">Nuestra Visión</h3>
             <p className="text-muted-foreground leading-relaxed text-sm sm:text-base lg:text-lg">
-              Consolidarnos como el proveedor líder a nivel nacional en soluciones de iluminación municipal, expandiendo
-              nuestra cobertura y manteniendo los más altos estándares de calidad, cumplimiento normativo e innovación
-              tecnológica en cada proyecto.
+             Brindar soluciones integrales, eficientes y confiables en importación, logística e infraestructura de alumbrado público, actuando como aliados estratégicos de los gobiernos municipales y estatales, contribuyendo a mejorar la seguridad, la eficiencia energética y la calidad de vida de la población. 
             </p>
           </div>
         </div>
@@ -85,7 +80,7 @@ export default function About({ onContactClick }: ContactClickProps) {
               Nuestros Valores
             </h3>
             <p className="text-muted-foreground text-sm sm:text-base lg:text-lg">
-              Principios que guían cada acción y decisión en nuestra empresa
+              Principios que rigen cada decisión y operación de nuestra empresa
             </p>
           </div>
 

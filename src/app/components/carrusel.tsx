@@ -70,7 +70,7 @@ export default function Hero({ onContactClick }: ContactClickProps) {
       <div className="absolute inset-y-0 left-2 sm:left-4 flex items-center z-20">
         <button
           onClick={prevSlide}
-          className="p-2 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all border border-white/20"
+          className="hidden p-2 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all border border-white/20"
           aria-label="Previous slide"
         >
           <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
@@ -79,7 +79,7 @@ export default function Hero({ onContactClick }: ContactClickProps) {
       <div className="absolute inset-y-0 right-2 sm:right-4 flex items-center z-20">
         <button
           onClick={nextSlide}
-          className="p-2 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all border border-white/20"
+          className="hidden  p-2 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all border border-white/20"
           aria-label="Next slide"
         >
           <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
@@ -102,9 +102,9 @@ export default function Hero({ onContactClick }: ContactClickProps) {
       </div>
 
       <div className="relative z-10 h-full b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
           <div className="max-w-3xl space-y-4 sm:space-y-6 lg:space-y-8">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-[1.1] tracking-tight text-white pt-4 sm:pt-15">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-[1.1] tracking-tight text-white pt-4 sm:pt-8 ">
               Servicios de
               <span className="block mt-1 sm:mt-2 font-semibold text-[#42b481]">
                 Importación Logística y Traslado
@@ -115,15 +115,15 @@ export default function Hero({ onContactClick }: ContactClickProps) {
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-200 leading-relaxed">
                 IMPORTACIÓN LOGÍSTICA Y TRASLADO PM es una empresa mexicana
                 especializada en soluciones integrales para gobiernos
-                municipales.
+                municipales y estatales.
               </p>
               <p className="text-sm sm:text-base md:text-lg text-slate-300 leading-relaxed">
                 Ofrecemos servicios de importación directa de luminarias LED
-                certificadas, logística especializada en proyectos de
-                infraestructura pública, instalación profesional, y soporte
-                técnico continuo. Nuestro compromiso es transformar la
-                infraestructura municipal con tecnología de vanguardia,
-                eficiencia energética y servicio excepcional.
+                certificadas, logística especializada para proyectos de
+                infraestructura pública, instalación profesional y soporte
+                técnico continuo. Nuestro compromiso es modernizar la
+                infraestructura urbana mediante tecnología de vanguardia,
+                eficiencia energética y un servicio confiable de clase mundial.
               </p>
             </div>
 
@@ -133,7 +133,7 @@ export default function Hero({ onContactClick }: ContactClickProps) {
                   100+
                 </div>
                 <div className="text-xs sm:text-sm text-slate-400">
-                  Proyectos Completados
+                  Proyectos Ejecutados
                 </div>
               </div>
               <div className="space-y-1">
@@ -149,7 +149,7 @@ export default function Hero({ onContactClick }: ContactClickProps) {
                   24/7
                 </div>
                 <div className="text-xs sm:text-sm text-slate-400">
-                  Soporte Técnico
+                  Soporte Técnico Especializado
                 </div>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function Hero({ onContactClick }: ContactClickProps) {
                 href="#servicios"
                 className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-white/30 hover:border-white/60 hover:bg-white/10 text-white rounded-lg font-medium text-sm sm:text-base transition-all backdrop-blur-sm text-center"
               >
-                Conocer Servicios
+                Ver Servicios
               </a>
             </div>
           </div>

@@ -5,32 +5,32 @@ const advantages = [
   {
     icon: Award,
     title: "Experiencia Comprobada",
-    description: "Equipo con trayectoria demostrable en proyectos con gobiernos municipales y estatales",
+    description: "Equipo con trayectoria demostrable en proyectos con gobiernos municipales, estatales y organismos públicos.",
   },
   {
     icon: Package,
     title: "Servicio Integral 360°",
-    description: "Gestión completa: importación, logística, instalación y mantenimiento en un solo proveedor",
+    description: "Gestión completa del proyecto: importación, logística, instalación, puesta en marcha y mantenimiento con un solo proveedor responsable.",
   },
   {
     icon: Shield,
     title: "Cumplimiento Garantizado",
-    description: "Total apego al marco jurídico mexicano con todas las licencias y permisos necesarios",
+    description: "Operación bajo estricto apego al marco jurídico mexicano, con todas las licencias, registros y permisos requeridos para contratación pública.",
   },
   {
     icon: Users,
     title: "Equipo Especializado",
-    description: "Personal técnico certificado y capacitado en las últimas tecnologías de iluminación LED",
+    description: "Personal técnico certificado y capacitado en tecnologías de iluminación LED, obra eléctrica e infraestructura urbana.",
   },
   {
     icon: Zap,
     title: "Tecnología de Vanguardia",
-    description: "Equipamiento moderno y especializado para proyectos de infraestructura de cualquier escala",
+    description: "Equipamiento moderno y soluciones especializadas para proyectos de infraestructura a cualquier escala, con eficiencia energética y alto desempeño.",
   },
   {
     icon: Clock,
     title: "Soporte 24/7",
-    description: "Atención continua durante todo el proyecto y servicio post-venta con garantías extendidas",
+    description: "Atención técnica continua durante la ejecución del proyecto y servicio postventa, con garantías y mantenimiento programado.",
   },
 ]
 
@@ -42,13 +42,13 @@ export default function WhyChooseUs({ onContactClick }: ContactClickProps) {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#e3e8ef] text-[#42b481] rounded-full font-bold text-sm mb-6">
             VENTAJAS COMPETITIVAS
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-[#42b481] mb-6 leading-tight text-balance">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-black mb-6 leading-tight text-balance">
             Por Qué Somos su
             <br />
             <span className="text-[#42b481]">Mejor Opción</span>
           </h2>
-          <p className="text-lg sm:text-xl text-[#42b481] max-w-3xl mx-auto leading-relaxed">
-            Combinamos experiencia, tecnología y compromiso para entregar proyectos excepcionales
+          <p className="text-lg sm:text-xl text-black max-w-3xl mx-auto leading-relaxed"> 
+            Combinamos experiencia, capacidad técnica y cumplimiento normativo para ofrecer soluciones integrales de alto impacto en proyectos de infraestructura pública.
           </p>
         </div>
 

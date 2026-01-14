@@ -1,4 +1,4 @@
-import { MapPin, Warehouse, Truck, Globe } from "lucide-react"
+import { MapPin, Warehouse, Truck, Globe } from "lucide-react";
 import type { ContactClickProps } from "./types";
 
 export default function Coverage({ onContactClick }: ContactClickProps) {
@@ -20,7 +20,10 @@ export default function Coverage({ onContactClick }: ContactClickProps) {
             República Mexicana
           </h2>
           <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Capacidad operativa para establecer presencia en cualquier estado y atender proyectos de cualquier magnitud
+            Contamos con capacidad operativa y logística para establecer
+            cobertura en cualquier estado del país, atendiendo proyectos de
+            infraestructura pública de diversa escala, con cumplimiento
+            normativo, tiempos garantizados y soporte técnico especializado.
           </p>
         </div>
 
@@ -33,10 +36,13 @@ export default function Coverage({ onContactClick }: ContactClickProps) {
                   <MapPin className="w-7 h-7 sm:w-8 sm:h-8" />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black mb-3">Alcance Nacional</h3>
+                  <h3 className="text-xl sm:text-2xl font-black mb-3">
+                    Alcance Nacional
+                  </h3>
                   <p className="text-white/80 leading-relaxed">
-                    Establecemos sucursales y operamos en distintos puntos del país, adaptándonos a las necesidades
-                    regionales de cada proyecto.
+                    Operamos y establecemos presencia en distintos puntos del
+                    país, adaptándonos a las necesidades regionales y operativas
+                    de cada proyecto.
                   </p>
                 </div>
               </div>
@@ -48,10 +54,13 @@ export default function Coverage({ onContactClick }: ContactClickProps) {
                   <Warehouse className="w-7 h-7 sm:w-8 sm:h-8" />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black mb-3">Infraestructura Completa</h3>
+                  <h3 className="text-xl sm:text-2xl font-black mb-3">
+                    Infraestructura Completa
+                  </h3>
                   <p className="text-white/80 leading-relaxed">
-                    Contamos con fábricas, talleres, bodegas y oficinas propias para garantizar la ejecución eficiente
-                    de proyectos.
+                    Contamos con instalaciones propias, incluyendo centros de
+                    operación, bodegas, talleres y oficinas, que respaldan la
+                    ejecución eficiente y segura de los proyectos.
                   </p>
                 </div>
               </div>
@@ -63,10 +72,13 @@ export default function Coverage({ onContactClick }: ContactClickProps) {
                   <Truck className="w-7 h-7 sm:w-8 sm:h-8" />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black mb-3">Logística Especializada</h3>
+                  <h3 className="text-xl sm:text-2xl font-black mb-3">
+                    Logística Especializada
+                  </h3>
                   <p className="text-white/80 leading-relaxed">
-                    Flota propia de transporte con capacidad para manejar proyectos de gran volumen en cualquier
-                    ubicación.
+                    Disponemos de flota y operadores certificados para el
+                    traslado de equipos y materiales, con capacidad para atender
+                    proyectos de gran volumen en cualquier región.
                   </p>
                 </div>
               </div>
@@ -75,46 +87,71 @@ export default function Coverage({ onContactClick }: ContactClickProps) {
 
           {/* Right: Regional focus */}
           <div className="bg-white/95 backdrop-blur rounded-3xl p-8 sm:p-10 lg:p-12 shadow-2xl text-black">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-primary mb-6">Especialización Regional</h3>
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-primary mb-6">
+              Especialización Regional
+            </h3>
             <div className="space-y-6">
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-bold text-primary text-lg">Estado de México</span>
-                  <span className="text-sm font-semibold text-accent">Principal</span>
+                  <span className="font-bold text-primary text-lg">
+                    Estado de México
+                  </span>
+                  <span className="text-sm font-semibold text-accent">
+                    Operación Principal
+                  </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-3">
-                  <div className="bg-[#42b481] rounded-full h-3 " style={{ width: "95%" }} />
+                  <div
+                    className="bg-[#42b481] rounded-full h-3 "
+                    style={{ width: "95%" }}
+                  />
                 </div>
               </div>
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-bold text-primary text-lg">Michoacán</span>
-                  <span className="text-sm font-semibold text-accent">Principal</span>
+                  <span className="font-bold text-primary text-lg">
+                    Michoacán
+                  </span>
+                  <span className="text-sm font-semibold text-accent">
+                    Operación Principal
+                  </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-3">
-                  <div className="bg-[#42b481] rounded-full h-3" style={{ width: "90%" }} />
+                  <div
+                    className="bg-[#42b481] rounded-full h-3"
+                    style={{ width: "90%" }}
+                  />
                 </div>
               </div>
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-bold text-primary text-lg">Resto del País</span>
-                  <span className="text-sm font-semibold text-muted-foreground">En Expansión</span>
+                  <span className="font-bold text-primary text-lg">
+                    Resto del País
+                  </span>
+                  <span className="text-sm font-semibold text-muted-foreground">
+                    En Expansión
+                  </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-3">
-                  <div className="bg-[#3a3f47] rounded-full h-3" style={{ width: "70%" }} />
+                  <div
+                    className="bg-[#3a3f47] rounded-full h-3"
+                    style={{ width: "70%" }}
+                  />
                 </div>
               </div>
             </div>
 
             <div className="mt-8 p-6 bg-[#3a5582]/10 rounded-2xl border-2 border-[#3a5582]/20">
               <p className="text-primary font-semibold leading-relaxed">
-                <span className="font-black text-[#42b481]">Nota:</span> Capacidad para expandir operaciones a cualquier
-                región según los requerimientos de nuestros clientes gubernamentales.
+                <span className="font-black text-[#42b481]">Nota:</span>{" "}
+                Capacidad para ampliar operaciones a cualquier entidad
+                federativa conforme a los requerimientos técnicos y
+                administrativos de nuestros clientes gubernamentales.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -15,7 +15,7 @@ export default function GovernmentSectors({ onContactClick }: ContactClickProps)
             <span className="text-[#42b481]">Gobierno</span>
           </h2>
           <p className="text-lg sm:text-xl text-black max-w-3xl mx-auto leading-relaxed">
-            Proveedor certificado y confiable para entidades gubernamentales en todos los niveles
+            Proveedor confiable y certificado para entidades gubernamentales en los tres niveles de gobierno, con experiencia en proyectos de infraestructura, cumplimiento normativo y ejecución transparente.
           </p>
         </div>
 
@@ -27,8 +27,7 @@ export default function GovernmentSectors({ onContactClick }: ContactClickProps)
             </div>
             <h3 className="text-xl sm:text-2xl font-black text-[#42b481] mb-3">Gobiernos Municipales</h3>
             <p className="text-black leading-relaxed mb-4">
-              Socios de confianza para proyectos de alumbrado público e infraestructura urbana en municipios de todo
-              México.
+              Socio estratégico para proyectos de alumbrado público e infraestructura urbana en municipios de toda la República Mexicana.
             </p>
             <div className="text-sm font-bold text-[#42b481]">15+ Municipios Atendidos</div>
           </div>
@@ -40,7 +39,7 @@ export default function GovernmentSectors({ onContactClick }: ContactClickProps)
             </div>
             <h3 className="text-xl sm:text-2xl font-black text-[#42b481] mb-3">Gobiernos Estatales</h3>
             <p className="text-black leading-relaxed mb-4">
-              Experiencia comprobada en proyectos de gran escala a nivel estatal con cumplimiento normativo total.
+              Experiencia comprobada en proyectos de gran escala a nivel estatal, con procesos alineados a normatividad, licitaciones y control administrativo.
             </p>
             <div className="text-sm font-bold text-[#42b481]">3+ Estados Colaborando</div>
           </div>
@@ -52,7 +51,7 @@ export default function GovernmentSectors({ onContactClick }: ContactClickProps)
             </div>
             <h3 className="text-xl sm:text-2xl font-black text-[#42b481] mb-3">Organismos Descentralizados</h3>
             <p className="text-black leading-relaxed mb-4">
-              Trabajamos con fideicomisos, empresas estatales y organismos públicos con total transparencia.
+              Colaboramos con fideicomisos, organismos públicos y empresas estatales, garantizando transparencia, trazabilidad y cumplimiento contractual.
             </p>
             <div className="text-sm font-bold text-[#42b481]">5+ Organismos Asociados</div>
           </div>
@@ -67,15 +66,14 @@ export default function GovernmentSectors({ onContactClick }: ContactClickProps)
                 Cumplimiento Legal Garantizado
               </h3>
               <p className="text-black mb-8 leading-relaxed text-base sm:text-lg">
-                Cumplimos todos los requisitos legales para actuar como proveedores y contratistas del sector público en
-                México, con registro ante todas las autoridades competentes.
+                Cumplimos con todos los requisitos legales, administrativos y fiscales para operar como proveedores y contratistas del sector público en México, contando con los registros, certificaciones y autorizaciones ante las autoridades competentes.
               </p>
 
               <div className="space-y-4">
                 {[
-                  { icon: FileCheck, text: "Registro ante CompraNet y autoridades federales" },
-                  { icon: Shield, text: "Certificaciones de calidad internacionales" },
-                  { icon: Users, text: "Experiencia demostrable con gobiernos" },
+                  { icon: FileCheck, text: "Registro vigente en CompraNet y padrones de proveedores federales, estatales y municipales" },
+                  { icon: Shield, text: "Certificaciones de calidad y cumplimiento de normas nacionales e internacionales" },
+                  { icon: Users, text: "Experiencia comprobable en contratación pública y ejecución de proyectos gubernamentales" },
                 ].map((item, idx) => {
                   const Icon = item.icon
                   return (
