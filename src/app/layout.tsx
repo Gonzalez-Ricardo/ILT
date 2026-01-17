@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ILT",
+  title: "ILT | Importación, Logística y Traslado PM",
   description: "Soluciones integrales en importación, logística, traslado e instalación de infraestructura y equipamiento para gobiernos y entidades públicas."
 };
 
