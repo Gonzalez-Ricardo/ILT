@@ -100,7 +100,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="text-xs sm:text-sm text-muted-foreground mb-1">Ubicación</div>
-                    <div className="text-sm sm:text-base text-foreground font-medium">México</div>
+                    <div className="text-sm sm:text-base text-foreground font-medium">Salvatierra Guanajuato</div>
                   </div>
                 </div>
               </div>
