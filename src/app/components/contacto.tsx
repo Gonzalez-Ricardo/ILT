@@ -78,7 +78,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="text-xs sm:text-sm text-muted-foreground mb-1">Teléfono</div>
-                    <div className="text-sm sm:text-base text-foreground font-medium">+52 (466) 123-2221</div>
+                    <a href="tel:+524661232221" className="text-sm sm:text-base text-foreground font-medium">+52 (466) 123-2221</a>
                   </div>
                 </div>
 
