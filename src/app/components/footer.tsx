@@ -21,47 +21,17 @@ export default function Footer({ onContactClick }: ContactClickProps) {
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-1 shrink-0" />
-                <span className="text-white/70">+52 (000) 000-0000</span>
+                <span className="text-white/70">+52 (466) 123-2221</span>
               </div>
               <div className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-1 shrink-0" />
-                <span className="text-white/70">contacto@pmlogistica.com</span>
+                <span className="text-white/70">Impotacionlogisticaytrasladopm@gmail.com</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-1 shrink-0" />
                 <span className="text-white/70">Estado de México, México</span>
               </div>
             </div>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  Privacidad
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  Términos de Servicio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  Aviso de Privacidad
-                </Link>
-              </li>
-            </ul>
           </div>
         </div>
 

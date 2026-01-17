@@ -201,9 +201,9 @@ export default function Services({ onContactClick }: ContactClickProps) {
                       />
                     </svg>
                   </button>
-                  <button className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-white/30 hover:border-white/60 hover:bg-white/10 text-white rounded-lg font-medium text-sm sm:text-base transition-all">
-                    Agendar Llamada
-                  </button>
+                  <a href="tel:+524661232221" target="_blank" className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-white/30 hover:border-white/60 hover:bg-white/10 text-white rounded-lg font-medium text-sm sm:text-base transition-all">
+                    Llamar ahora
+                  </a>
                 </div>
                 <div className="mt-6 sm:mt-8 lg:mt-10 flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 sm:gap-4 lg:gap-6 text-primary-foreground/80 text-xs sm:text-sm">
                   <div className="flex items-center gap-2">

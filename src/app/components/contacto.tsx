@@ -1,35 +1,53 @@
 "use client"
 
 import type React from "react"
-
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { useForm, ValidationError } from "@formspree/react"
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
     nombre: "",
-    correo: "",
+    email: "",
     telefono: "",
     municipio: "",
     tipoProyecto: "",
-    mensaje: "",
+    message: "",
   })
 
+  // ✅ Estado local para controlar la pantalla de éxito sin loops
   const [submitted, setSubmitted] = useState(false)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  // ✅ Formspree ID del endpoint: https://formspree.io/f/mnjjjzov
+  const [state, handleSubmit] = useForm("mnjjjzov", {
+    data: {
+      subject: "Nueva solicitud de cotización (Web)",
+    },
+  })
+
+  useEffect(() => {
+    if (!state.succeeded) return
+
+    // Cuando Formspree confirma éxito:
+    setSubmitted(true)
+    setFormData({
+      nombre: "",
+      email: "",
+      telefono: "",
+      municipio: "",
+      tipoProyecto: "",
+      message: "",
+    })
+
+    const t = setTimeout(() => setSubmitted(false), 3000)
+    return () => clearTimeout(t)
+  }, [state.succeeded])
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-    setSubmitted(true)
-    setTimeout(() => {
-      setSubmitted(false)
-      setFormData({ nombre: "", correo: "", telefono: "", municipio: "", tipoProyecto: "", mensaje: "" })
-    }, 3000)
   }
 
   return (
@@ -60,7 +78,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="text-xs sm:text-sm text-muted-foreground mb-1">Teléfono</div>
-                    <div className="text-sm sm:text-base text-foreground font-medium">+52 (000) 000-0000</div>
+                    <div className="text-sm sm:text-base text-foreground font-medium">+52 (466) 123-2221</div>
                   </div>
                 </div>
 
@@ -71,12 +89,12 @@ export default function ContactSection() {
                   <div>
                     <div className="text-xs sm:text-sm text-[#42b481] mb-1">Email</div>
                     <div className="text-sm sm:text-base text-foreground font-medium break-all">
-                      contacto@empresa.mx
+                      Impotacionlogisticaytrasladopm@gmail.com
                     </div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 sm:gap -4">
+                <div className="flex items-start gap-3 sm:gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#42b481]/10 rounded-lg flex items-center justify-center shrink-0">
                     <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-[#42b481]" />
                   </div>
@@ -96,9 +114,7 @@ export default function ContactSection() {
                 Sábados: 9:00 AM - 2:00 PM
               </p>
               <div className="pt-3 sm:pt-4 border-t border-white/20">
-                <p className="text-xs sm:text-sm text-white/90">
-                  Soporte técnico disponible 24/7 para proyectos activos
-                </p>
+                <p className="text-xs sm:text-sm text-white/90">Soporte técnico disponible 24/7 para proyectos activos</p>
               </div>
             </div>
           </div>
@@ -118,6 +134,12 @@ export default function ContactSection() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                  {/* Honeypot anti-spam (opcional) */}
+                  <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+
+                  {/* Errores generales */}
+                  <ValidationError errors={state.errors} className="text-sm text-red-600" />
+
                   <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                     <div>
                       <label className="block text-xs sm:text-sm font-medium text-foreground mb-2">
@@ -132,6 +154,7 @@ export default function ContactSection() {
                         className="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
                         placeholder="Juan Pérez"
                       />
+                      <ValidationError field="nombre" prefix="Nombre" errors={state.errors} className="text-xs text-red-600 mt-1" />
                     </div>
 
                     <div>
@@ -139,14 +162,16 @@ export default function ContactSection() {
                         Correo Electrónico*
                       </label>
                       <input
+                        id="email"
                         type="email"
-                        name="correo"
-                        value={formData.correo}
+                        name="email"
+                        value={formData.email}
                         onChange={handleChange}
                         required
                         className="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
                         placeholder="juan@municipio.gob.mx"
                       />
+                      <ValidationError field="email" prefix="Correo" errors={state.errors} className="text-xs text-red-600 mt-1" />
                     </div>
 
                     <div>
@@ -160,6 +185,7 @@ export default function ContactSection() {
                         className="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
                         placeholder="+52 (000) 000-0000"
                       />
+                      <ValidationError field="telefono" prefix="Teléfono" errors={state.errors} className="text-xs text-red-600 mt-1" />
                     </div>
 
                     <div>
@@ -172,13 +198,12 @@ export default function ContactSection() {
                         className="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
                         placeholder="Nombre del municipio"
                       />
+                      <ValidationError field="municipio" prefix="Municipio" errors={state.errors} className="text-xs text-red-600 mt-1" />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs sm:text-sm font-medium text-foreground mb-2">
-                      Tipo de Proyecto*
-                    </label>
+                    <label className="block text-xs sm:text-sm font-medium text-foreground mb-2">Tipo de Proyecto*</label>
                     <select
                       name="tipoProyecto"
                       value={formData.tipoProyecto}
@@ -194,26 +219,30 @@ export default function ContactSection() {
                       <option value="infraestructura">Infraestructura Completa</option>
                       <option value="otro">Otro</option>
                     </select>
+                    <ValidationError field="tipoProyecto" prefix="Tipo de Proyecto" errors={state.errors} className="text-xs text-red-600 mt-1" />
                   </div>
 
                   <div>
                     <label className="block text-xs sm:text-sm font-medium text-foreground mb-2">Mensaje*</label>
                     <textarea
-                      name="mensaje"
-                      value={formData.mensaje}
+                      id="message"
+                      name="message"
+                      value={formData.message}
                       onChange={handleChange}
                       required
                       rows={5}
                       className="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none resize-none transition-all"
                       placeholder="Describe tu proyecto y necesidades específicas..."
                     />
+                    <ValidationError field="message" prefix="Mensaje" errors={state.errors} className="text-xs text-red-600 mt-1" />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full px-6 py-3 sm:px-8 sm:py-4 bg-[#42b481] hover:bg-[#42b481]/90 text-white rounded-lg font-medium text-sm sm:text-base transition-all flex items-center justify-center gap-2 sm:gap-3 shadow-sm hover:shadow-md"
+                    disabled={state.submitting}
+                    className="w-full px-6 py-3 sm:px-8 sm:py-4 bg-[#42b481] hover:bg-[#42b481]/90 disabled:opacity-60 disabled:cursor-not-allowed text-white rounded-lg font-medium text-sm sm:text-base transition-all flex items-center justify-center gap-2 sm:gap-3 shadow-sm hover:shadow-md"
                   >
-                    Enviar Solicitud
+                    {state.submitting ? "Enviando..." : "Enviar Solicitud"}
                     <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
 

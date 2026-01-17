@@ -3,7 +3,7 @@
 export default function FloatingButton() {
   return (
     <a
-    href=""
+    href="https://wa.link/qsos6j"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Chat en WhatsApp"
